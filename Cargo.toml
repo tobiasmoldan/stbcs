@@ -1,0 +1,13 @@
+[package]
+name = "stbcs"
+version = "0.1.0"
+authors = ["Tobias Moldan <tobias.moldan@gmail.com>"]
+edition = "2018"
+description = "Simple TCP Broadcast Chat Server"
+
+[dependencies]
+anyhow = "1"
+
+[dependencies.tokio]
+version = "0.2"
+features = ["rt-core", "tcp", "io-util", "sync", "rt-threaded", "time", "signal", "macros"]

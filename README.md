@@ -12,7 +12,7 @@ The executable can then be found at `./target/release/stbcs`
 
 ## Run
 
-Either run `./stbcs` or as container `docker --init -d -p 8000:8000 tobiasmoldan/stbcs:v0.1.2`
+Either run `./stbcs` or as container `docker run --init -d -p 8000:8000 tobiasmoldan/stbcs:v0.1.2`
 
 ## License
 

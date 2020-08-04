@@ -1,6 +1,6 @@
-# Simple UDP Broadcast Chat Server
+# Simple TCP Broadcast Chat Server
 
-Listens to port 8000 and will forward any UDP message to all addresses that sent something within the last 3 minutes
+Listens to port 8000 and will forward any TCP message to all connected clients
 
 ## Build
 
@@ -8,11 +8,11 @@ Listens to port 8000 and will forward any UDP message to all addresses that sent
 cargo build --release
 ```
 
-The executable can then be found at `./target/release/subcs`
+The executable can then be found at `./target/release/stbcs`
 
 ## Run
 
-Either run `./subcs` or as container `docker --init -d -p 8000:8000/udp tobiasmoldan/subcs:v0.2.0`
+Either run `./stbcs` or as container `docker --init -d -p 8000:8000 tobiasmoldan/stbcs:v0.1.0`
 
 ## License
 
